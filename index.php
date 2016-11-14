@@ -4,7 +4,8 @@ $redis = new redis_cli ( 'redis', 6379 );
 function addVote() {
 	global $redis;
 	$equipo = $_POST["equipo"];
-	$redis->cmd( 'INCR', $equipo)->set();
+	// $redis->cmd('INCR',$equipo)->set();
+	$redis->cmd('INCR','tigre')->set();
 	echo "<header>Gracias por participar. Puedes votar las veces que quieras.</header>";
 }
 function showVotes() {
