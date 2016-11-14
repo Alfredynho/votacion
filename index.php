@@ -45,7 +45,7 @@ function showVotes() {
 				</li>
 			</form>
 			</ul>
-			<h2>Resultados</h2>
+			<h2>Resultados de la votación</h2>
 			<ul>
 				<?php showVotes(); ?>
 			</ul>
